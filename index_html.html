@@ -1,0 +1,333 @@
+<!-- 檔名：index.html -->
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="VcUhCS-4_-je1Hv8a9RW26hBVi_or4m_h2nz5Mcxxho" />
+    <title>艾力｜宜蘭玩樂實驗家</title>
+    <meta name="description" content="艾力（typoiwu）的個人網站 - 宜蘭玩樂實驗家，持續解鎖宜蘭生活新玩法，認真玩耍，隨興實驗！揪人、搞活動、體驗各種生活可能。">
+    <meta name="keywords" content="宜蘭活動, 宜蘭生活, 艾力, 宜蘭玩樂實驗家, typoiwu">
+    <link rel="canonical" href="http://typoiwu.github.io/">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="艾力｜宜蘭玩樂實驗家">
+    <meta property="og:description" content="認真玩耍，隨興實驗！持續解鎖宜蘭生活新玩法。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://typoiwu.github.io/">
+    <meta property="og:image" content="http://typoiwu.github.io/fu1.png">
+
+    <!-- Favicon (Emoji) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎪</text></svg>">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            yellow: '#FFDE59',
+                            orange: '#FF914D',
+                            pink: '#FF66C4',
+                            purple: '#8C52FF',
+                            dark: '#111827'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "艾力",
+      "alternateName": "typoiwu",
+      "jobTitle": "宜蘭玩樂實驗家",
+      "url": "http://typoiwu.github.io/",
+      "description": "生活可以怎麼玩？艾力來實驗！持續解锁宜蘭生活新玩法，揪人、搞活動、體驗各種可能。"
+    }
+    </script>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans antialiased selection:bg-brand-pink selection:text-white relative overflow-x-hidden">
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-gray-950/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-black tracking-wider text-brand-yellow hover:text-brand-orange transition-colors flex items-center gap-2">
+                <span class="text-2xl">🎪</span> 艾力 <span>ALEX</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center gap-8 font-bold text-sm tracking-wide">
+                <a href="#about" class="hover:text-brand-yellow transition-colors">關於我</a>
+                <a href="#highlights" class="hover:text-brand-orange transition-colors">亮點數字</a>
+                <a href="#works" class="hover:text-brand-pink transition-colors">作品集</a>
+                <a href="#faq" class="hover:text-brand-purple transition-colors">常見問題</a>
+                <a href="#contact" class="px-4 py-2 bg-brand-yellow text-gray-950 rounded-full hover:bg-brand-orange hover:text-white transition-all transform hover:scale-105">聯絡我</a>
+            </nav>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none p-2" aria-label="切換選單">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-b border-gray-800 px-4 pt-2 pb-6 space-y-3 font-bold">
+            <a href="#about" class="block py-2 text-gray-300 hover:text-brand-yellow">關於我</a>
+            <a href="#highlights" class="block py-2 text-gray-300 hover:text-brand-orange">亮點數字</a>
+            <a href="#works" class="block py-2 text-gray-300 hover:text-brand-pink">作品集</a>
+            <a href="#faq" class="block py-2 text-gray-300 hover:text-brand-purple">常見問題</a>
+            <a href="#contact" class="block text-center py-2 bg-brand-yellow text-gray-950 rounded-lg hover:bg-brand-orange hover:text-white">聯絡我</a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="pt-16">
+
+        <!-- Hero Section (D 大字滿版) -->
+        <section class="min-h-[90vh] flex flex-col justify-center items-center text-center px-4 relative overflow-hidden bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950">
+            <!-- Background Decorative Glows -->
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-pink/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute bottom-1/4 left-1/3 w-80 h-80 bg-brand-yellow/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="relative z-10 max-w-4xl mx-auto space-y-6">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-yellow/30 bg-brand-yellow/10 text-brand-yellow text-sm font-semibold mb-2">
+                    <span>📍 宜蘭縣</span>
+                    <span class="text-gray-500">•</span>
+                    <span>宜蘭玩樂實驗家</span>
+                </div>
+
+                <h1 class="text-5xl sm:text-7xl md:text-8xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow via-brand-orange to-brand-pink leading-tight">
+                    認真玩耍<br>隨興實驗
+                </h1>
+
+                <p class="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto font-medium">
+                    生活可以怎麼玩？艾力來實驗！持續解鎖宜蘭生活新玩法，揪人、搞活動、體驗各種可能，不怕奇怪，只怕沒試過！
+                </p>
+
+                <!-- Keywords Tags -->
+                <div class="flex flex-wrap justify-center gap-3 pt-2">
+                    <span class="px-4 py-1.5 rounded-full bg-gray-800 text-brand-yellow text-sm font-bold border border-gray-700"># 躺平</span>
+                    <span class="px-4 py-1.5 rounded-full bg-gray-800 text-brand-orange text-sm font-bold border border-gray-700"># 免廢</span>
+                    <span class="px-4 py-1.5 rounded-full bg-gray-800 text-brand-pink text-sm font-bold border border-gray-700"># 走路</span>
+                </div>
+
+                <div class="pt-8 flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#about" class="px-8 py-4 bg-brand-yellow text-gray-950 font-black rounded-full hover:bg-brand-orange hover:text-white transition-all transform hover:-translate-y-1 shadow-lg shadow-brand-yellow/20">
+                        認識艾力 🚀
+                    </a>
+                    <a href="#contact" class="px-8 py-4 bg-gray-900 text-white font-bold rounded-full border border-gray-700 hover:border-brand-pink transition-all">
+                        一起實驗活動 ✉️
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24 bg-gray-900 border-t border-b border-gray-800">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <!-- Profile Image / Image Placeholder -->
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-brand-yellow to-brand-pink rounded-3xl blur opacity-30 group-hover:opacity-75 transition duration-500"></div>
+                        <div class="relative rounded-2xl overflow-hidden border border-gray-700 bg-gray-800 aspect-square">
+                            <img src="fu1.png" alt="艾力個人照片" loading="lazy" 
+                                 onerror="this.onerror=null;this.src='https://picsum.photos/seed/alex/600/600';"
+                                 class="w-full h-full object-cover transform transition duration-500 group-hover:scale-105">
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="space-y-6">
+                        <div class="inline-block px-3 py-1 bg-brand-orange/20 text-brand-orange rounded-md text-sm font-bold">
+                            ABOUT ME
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-black text-white">
+                            關於艾力
+                        </h2>
+                        <p class="text-gray-300 text-lg leading-relaxed">
+                            我現在主要在宜蘭到處玩耍！我相信生活不該只有一種固定的樣貌，透過各種趣味活動與探索，把日常變成充滿惊喜的實驗場。
+                        </p>
+                        <div class="p-4 rounded-xl bg-gray-800/60 border border-gray-700 border-l-4 border-l-brand-yellow">
+                            <h3 class="text-brand-yellow font-bold text-sm mb-1">做事原則</h3>
+                            <p class="text-gray-200 text-xl font-black">「 好玩！ 」</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlight Numbers Section -->
+        <section id="highlights" class="py-20 bg-gray-950">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-black text-white">亮點數據</h2>
+                    <p class="text-gray-400 mt-2">在宜蘭踩踏與實驗的足跡紀錄</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                    <div class="p-8 rounded-2xl bg-gray-900 border border-gray-800 hover:border-brand-yellow transition-all">
+                        <div class="text-4xl sm:text-5xl font-black text-brand-yellow mb-2">12+</div>
+                        <div class="text-gray-400 font-medium">宜蘭探索場域</div>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-gray-900 border border-gray-800 hover:border-brand-orange transition-all">
+                        <div class="text-4xl sm:text-5xl font-black text-brand-orange mb-2">50+</div>
+                        <div class="text-gray-400 font-medium">揪團與活動參與者</div>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-gray-900 border border-gray-800 hover:border-brand-pink transition-all">
+                        <div class="text-4xl sm:text-5xl font-black text-brand-pink mb-2">100%</div>
+                        <div class="text-gray-400 font-medium">好玩實驗熱情</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works / Projects Section -->
+        <section id="works" class="py-24 bg-gray-900 border-t border-gray-800">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <div class="inline-block px-3 py-1 bg-brand-pink/20 text-brand-pink rounded-md text-sm font-bold mb-2">
+                        PORTFOLIO
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-black text-white">作品與活動紀錄</h2>
+                    <p class="text-gray-400 mt-2">點擊查看我們在宜蘭發生的精彩實驗</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Work Card 1 Placeholder -->
+                    <div class="bg-gray-950 border border-gray-800 rounded-2xl overflow-hidden hover:border-brand-pink transition duration-300 flex flex-col">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="work1.jpg" alt="宜蘭探索活動" loading="lazy"
+                                 onerror="this.onerror=null;this.src='https://picsum.photos/seed/yilan1/600/400';"
+                                 class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-brand-pink text-white text-xs font-bold px-3 py-1 rounded-full">社群活動</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">宜蘭生活探索企劃</h3>
+                                <p class="text-gray-400 text-sm">解鎖在地隱藏景點與玩法，邀請同好一起走入自然與巷弄。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Work Card 2 Placeholder -->
+                    <div class="bg-gray-950 border border-gray-800 rounded-2xl overflow-hidden hover:border-brand-yellow transition duration-300 flex flex-col">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="work2.jpg" alt="免廢與體驗活動" loading="lazy"
+                                 onerror="this.onerror=null;this.src='https://picsum.photos/seed/yilan2/600/400';"
+                                 class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-brand-yellow text-gray-950 text-xs font-bold px-3 py-1 rounded-full">實驗體驗</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">免廢與生活體驗實驗</h3>
+                                <p class="text-gray-400 text-sm">推廣永續與無負擔生活哲學，體驗各種好玩且低負擔的生活型態。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-24 bg-gray-950 border-t border-gray-800">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-black text-white">常見問題 FAQ</h2>
+                    <p class="text-gray-400 mt-2">關於艾力與宜蘭活動的常見疑問</p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="p-6 rounded-2xl bg-gray-900 border border-gray-800 space-y-2">
+                        <h3 class="text-lg font-bold text-brand-yellow flex items-center gap-2">
+                            <span>Q.</span> 為什麼要在宜蘭辦那麼多活動？
+                        </h3>
+                        <p class="text-gray-300 pl-6">
+                            因為宜蘭有山有海有獨特的生活步調！我們希望透過各種新玩法，讓大家看見宜蘭不同的可能性，同時也結交更多喜歡玩耍的朋友。
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-gray-900 border border-gray-800 space-y-2">
+                        <h3 class="text-lg font-bold text-brand-orange flex items-center gap-2">
+                            <span>Q.</span> 任何人都可以參加你們的活動嗎？
+                        </h3>
+                        <p class="text-gray-300 pl-6">
+                            沒錯！只要你有好奇心、喜歡嘗試新鮮事，都非常歡迎一起來玩。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA Section -->
+        <section id="contact" class="py-24 bg-gradient-to-t from-gray-900 to-gray-950 border-t border-gray-800 text-center">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                <h2 class="text-4xl sm:text-5xl font-black text-white">想一起玩或合作活動？</h2>
+                <p class="text-gray-300 text-lg">
+                    想邀約活動、提案合作或單純交流？歡迎關注並追蹤我的社群！
+                </p>
+                
+                <div class="pt-4 flex justify-center gap-6">
+                    <a href="http://typoiwu.github.io/" target="_blank" rel="noopener noreferrer" 
+                       class="px-8 py-4 bg-brand-pink text-white font-bold rounded-full hover:bg-brand-purple transition duration-300 transform hover:scale-105 shadow-lg shadow-brand-pink/30">
+                        追蹤我的動態 ✨
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-950 border-t border-gray-800 text-center text-gray-500 text-sm">
+        <div class="max-w-5xl mx-auto px-4">
+            <p>© 2026 艾力 Alex. All rights reserved.</p>
+            <p class="mt-1 text-xs text-gray-600">Built with HTML & Tailwind CSS</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 hidden z-40 p-3 bg-brand-yellow text-gray-950 font-bold rounded-full shadow-lg hover:bg-brand-orange hover:text-white transition-all transform hover:scale-110" aria-label="回到頂端">
+        ↑
+    </button>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking menu item
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Back to Top functionality
+        const backToTopBtn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('hidden');
+            } else {
+                backToTopBtn.classList.add('hidden');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
